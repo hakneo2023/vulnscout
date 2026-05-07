@@ -25,7 +25,7 @@ def color_for_module(name):
         "osint_adv": "\033[92m",
         "osint_social": "\033[95m",
         "osint_ip_adv": "\033[94m",
-        "osint_domain_adv": "\033[96m",
+        "domain_adv": "\033[96m",
         "osint_email_breach": "\033[93m"
     }
     return colors.get(name, "\033[0m")
@@ -72,11 +72,16 @@ def show_menu():
         "12": "techfp",
         "13": "waf",
         "14": "openredirect",
+
+        # NUOVI MODULI
         "15": "robots",
         "16": "osint_adv",
         "17": "osint_social",
         "18": "osint_ip_adv",
-        "19": "osint_domain_adv",
+
+        # CORRETTO: il modulo si chiama domain_adv nel lookup
+        "19": "domain_adv",
+
         "20": "osint_email_breach"
     }
 
@@ -100,7 +105,6 @@ def main():
 
     all_modules = modules_lookup.MODULES
 
-    # 🔧 QUI ERA L’ERRORE: mancava la parentesi chiusa
     print("\n[DEBUG] Moduli caricati dal lookup:", list(all_modules.keys()))
 
     if selected_module == "all":

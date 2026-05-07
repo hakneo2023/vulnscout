@@ -1,38 +1,34 @@
-import re
+# modules_osint_social.py
+
 import requests
 
-def run(target):
+def add(results, title, description, severity="info"):
+    results.append({
+        "severity": severity,
+        "module": "osint_social",
+        "title": title,
+        "description": description
+    })
+
+def run(username):
     results = []
 
-    username = target.strip()
-
-    # Controllo formato base
-    if not re.match(r"^[a-zA-Z0-9_.-]{3,32}$", username):
-        results.append(f"[SOCIAL] '{username}' non sembra uno username valido.")
-        return results
-
-    results.append(f"[SOCIAL] Username analizzato: {username}")
-
-    piattaforme = {
-        "Twitter/X": f"https://x.com/{username}",
+    platforms = {
         "GitHub": f"https://github.com/{username}",
-        "GitLab": f"https://gitlab.com/{username}",
-        "Reddit": f"https://www.reddit.com/user/{username}",
+        "Twitter": f"https://x.com/{username}",
         "Instagram": f"https://www.instagram.com/{username}",
-        "TikTok": f"https://www.tiktok.com/@{username}",
-        "Pinterest": f"https://www.pinterest.com/{username}",
-        "Steam": f"https://steamcommunity.com/id/{username}",
+        "Reddit": f"https://www.reddit.com/user/{username}",
+        "TikTok": f"https://www.tiktok.com/@{username}"
     }
 
-    for nome, url in piattaforme.items():
+    for name, url in platforms.items():
         try:
             r = requests.get(url, timeout=5)
             if r.status_code == 200:
-                results.append(f"[SOCIAL] Possibile profilo su {nome}: {url}")
+                add(results, f"Profilo trovato su {name}", url)
+            else:
+                add(results, f"{name}", "Nessun profilo trovato")
         except:
-            pass
-
-    if len(results) == 1:
-        results.append("[SOCIAL] Nessun profilo evidente trovato.")
+            add(results, f"{name}", "Errore durante la verifica")
 
     return results

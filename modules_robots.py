@@ -1,23 +1,39 @@
+# modules_robots.py
+
 import requests
+
+def add(results, title, description, severity="info"):
+    results.append({
+        "severity": severity,
+        "module": "robots",
+        "title": title,
+        "description": description
+    })
 
 def run(target):
     results = []
 
-    if not target.endswith("/"):
-        target += "/"
+    # Normalizza dominio
+    if not target.startswith("http"):
+        target = "http://" + target
 
-    url = target + "robots.txt"
+    robots_url = target.rstrip("/") + "/robots.txt"
 
     try:
-        r = requests.get(url, timeout=5)
+        r = requests.get(robots_url, timeout=5)
+
         if r.status_code == 200:
-            lines = r.text.splitlines()
-            for l in lines:
-                if "disallow" in l.lower():
-                    results.append(f"Robots entry: {l}")
+            add(results, "robots.txt trovato", robots_url)
+            lines = r.text.split("\n")
+
+            for line in lines:
+                line = line.strip()
+                if line:
+                    add(results, "Entry robots.txt", line)
         else:
-            results.append("robots.txt non trovato.")
+            add(results, "robots.txt", f"Non trovato (HTTP {r.status_code})")
+
     except Exception as e:
-        results.append(f"Errore robots.txt: {e}")
+        add(results, "Errore robots.txt", str(e), severity="low")
 
     return results

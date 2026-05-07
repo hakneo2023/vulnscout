@@ -15,7 +15,12 @@ import modules_techfp
 import modules_waf
 import modules_domain_adv
 import modules_osint_email_breach
-import modules_osint_adv   # <-- AGGIUNTO QUI
+import modules_osint_adv
+
+# Nuovi moduli
+import modules_robots
+import modules_osint_social
+import modules_osint_ip_adv
 
 MODULES = {
     "headers": modules_headers,
@@ -26,11 +31,4 @@ MODULES = {
     "xss": modules_xss,
     "phone_osint": modules_phone_osint,
     "fingerprinting": modules_fingerprinting,
-    "test": modules_test,
-    "ssl": modules_ssl,
-    "techfp": modules_techfp,
-    "waf": modules_waf,
-    "domain_adv": modules_domain_adv,
-    "osint_email_breach": modules_osint_email_breach,
-    "osint_adv": modules_osint_adv   # <-- MODULO CORRETTO
-}
+    "test": modules

@@ -1,45 +1,51 @@
-import re
-import socket
+# modules_osint_ip_adv.py
+
 import requests
 
-def run(target):
+def add(results, title, description, severity="info"):
+    results.append({
+        "severity": severity,
+        "module": "osint_ip_adv",
+        "title": title,
+        "description": description
+    })
+
+def run(ip):
     results = []
 
-    ip_regex = r"^\d{1,3}(\.\d{1,3}){3}$"
-    if not re.match(ip_regex, target):
-        results.append(f"[IP-ADV] '{target}' non sembra un IP valido.")
-        return results
-
-    ip = target.strip()
-    results.append(f"[IP-ADV] IP analizzato: {ip}")
-
-    # Reverse DNS
-    try:
-        rev = socket.gethostbyaddr(ip)
-        results.append(f"[IP-ADV] Reverse DNS: {rev[0]}")
-    except:
-        results.append("[IP-ADV] Nessun reverse DNS.")
-
-    # GeoIP free (ipinfo.io)
+    # IPINFO
     try:
         r = requests.get(f"https://ipinfo.io/{ip}/json", timeout=5)
         data = r.json()
-        for k in ["city", "region", "country", "org", "loc"]:
-            if k in data:
-                results.append(f"[IP-ADV] {k}: {data[k]}")
+        for k, v in data.items():
+            add(results, f"IPInfo: {k}", str(v))
     except:
-        results.append("[IP-ADV] GeoIP non disponibile.")
+        add(results, "IPInfo", "Errore durante la richiesta")
 
-    # Porte base 80/443
-    for port in [80, 443]:
-        try:
-            s = socket.socket()
-            s.settimeout(2)
-            res = s.connect_ex((ip, port))
-            if res == 0:
-                results.append(f"[IP-ADV] Porta aperta: {port}")
-            s.close()
-        except:
-            pass
+    # SHODAN InternetDB
+    try:
+        r = requests.get(f"https://internetdb.shodan.io/{ip}", timeout=5)
+        data = r.json()
+
+        ports = data.get("ports", [])
+        vulns = data.get("vulns", [])
+
+        add(results, "Porte aperte", str(ports))
+        add(results, "Vulnerabilità note", str(vulns), severity="medium" if vulns else "info")
+
+    except:
+        add(results, "Shodan InternetDB", "Errore durante la richiesta")
+
+    # GEOIP
+    try:
+        r = requests.get(f"http://ip-api.com/json/{ip}", timeout=5)
+        data = r.json()
+
+        if data.get("status") == "success":
+            add(results, "Geolocalizzazione", f"{data.get('country')} - {data.get('city')} (ISP: {data.get('isp')})")
+        else:
+            add(results, "Geolocalizzazione", "Non disponibile")
+    except:
+        add(results, "Geolocalizzazione", "Errore durante la richiesta")
 
     return results
