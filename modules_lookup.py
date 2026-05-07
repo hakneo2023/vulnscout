@@ -31,4 +31,14 @@ MODULES = {
     "xss": modules_xss,
     "phone_osint": modules_phone_osint,
     "fingerprinting": modules_fingerprinting,
-    "test": modules
+    "test": modules_test,
+    "ssl": modules_ssl,
+    "techfp": modules_techfp,
+    "waf": modules_waf,
+    "domain_adv": modules_domain_adv,
+    "osint_email_breach": modules_osint_email_breach,
+    "osint_adv": modules_osint_adv,
+    "robots": modules_robots,
+    "osint_social": modules_osint_social,
+    "osint_ip_adv": modules_osint_ip_adv
+}
