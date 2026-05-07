@@ -3,3 +3,6 @@ python-dotenv
 beautifulsoup4
 argparse
 phonenumbers
+dnspython
+python-whois
+colorama
