@@ -100,4 +100,47 @@ def main():
 
     all_modules = modules_lookup.MODULES
 
-    print("\n[DEBUG] Moduli caricati dal lookup:", list(all_modules
+    # 🔧 QUI ERA L’ERRORE: mancava la parentesi chiusa
+    print("\n[DEBUG] Moduli caricati dal lookup:", list(all_modules.keys()))
+
+    if selected_module == "all":
+        to_run = list(all_modules.keys())
+    else:
+        if selected_module not in all_modules:
+            print("[!] Modulo non valido.")
+            sys.exit(1)
+        to_run = [selected_module]
+
+    print(f"\n[+] Target: {target}")
+    print(f"[+] Moduli richiesti: {', '.join(to_run)}")
+
+    results = []
+
+    for name in to_run:
+        module = all_modules[name]
+
+        color = color_for_module(name)
+        reset = "\033[0m"
+
+        print(f"\n{color}[+] Esecuzione modulo: {name}{reset}")
+
+        try:
+            findings = module.run(target)
+            print(f"{color}[DEBUG]{reset} Il modulo '{name}' ha restituito {len(findings) if findings else 0} risultati")
+
+            if findings:
+                results.extend(findings)
+
+        except Exception as e:
+            print(f"{color}[!] Errore nel modulo {name}: {e}{reset}")
+
+    print(f"\n\033[92m[DEBUG]\033[0m Totale risultati raccolti: {len(results)}")
+
+    report.print_console_report(target, results)
+    report_html.generate_html_report(target, results)
+
+    print("\n[+] Scansione completata.\n")
+
+
+if __name__ == "__main__":
+    main()
