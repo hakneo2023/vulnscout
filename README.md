@@ -177,6 +177,7 @@ git clone https://github.com/hakneo2023/vulnscout
 cd vulnscout
 
 python -m venv venv
+
 source venv/bin/activate
 
 pip install -r requirements.txt 
