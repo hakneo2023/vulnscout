@@ -5,18 +5,20 @@
 
 
 # 🔍 VulnScout  
-VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing. 
-VulnScout è uno strumento leggero per la ricognizione delle vulnerabilità web, progettato per scopi didattici e per test di sicurezza autorizzati.
+VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing
+
+VulnScout è uno strumento leggero per la ricognizione delle vulnerabilità web, progettato per scopi didattici e per test di sicurezza autorizzati
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
 ## ⚠️ Disclaimer  
-This tool must only be used on systems you own or have explicit permission to test. 
-Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utente o per i quali si dispone di un'autorizzazione esplicita per il test.
+This tool must only be used on systems you own or have explicit permission to test 
+
+Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utente o per i quali si dispone di un'autorizzazione esplicita per il test
 
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
 # 🔧 Moduli di VulnScout 2.0
 
-VulnScout 2.0 include 20 moduli di analisi passiva, OSINT e fingerprinting.  
-Ogni modulo è progettato per essere non distruttivo e conforme alle best practice OWASP.
+VulnScout 2.0 include 20 moduli di analisi passiva, OSINT e fingerprinting 
+Ogni modulo è progettato per essere non distruttivo e conforme alle best practice OWASP
 
 ---
 ✨ Functionality
@@ -24,7 +26,7 @@ Ogni modulo è progettato per essere non distruttivo e conforme alle best practi
 ## 🛡️ 1) Headers
 Analizza gli header HTTP del server
 
-identifica configurazioni mancanti o deboli.
+identifica configurazioni mancanti o deboli
 
 CSP assente
 
@@ -109,13 +111,13 @@ certificati scaduti, protocolli obsoleti.
 ## 🏗️ 12) Technology Fingerprinting PRO
 Fingerprinting tecnologico avanzato
 
-plugin, versioni, stack server.  
+plugin, versioni, stack server
 
 ---
 ## 🛡️ 13) WAF Detector
 Rileva la presenza di Web Application Firewall
  
-Cloudflare, Sucuri, Imperva, AWS WAF.  
+Cloudflare, Sucuri, Imperva, AWS WAF
 
 ---
 ## 🔀 14) Open Redirect Scanner
@@ -133,19 +135,19 @@ percorsi nascosti o riservati
 ## 🌐 16) OSINT Avanzato (email/IP/dominio)
 Modulo OSINT multi-target
 
- WHOIS, DNS, reputazione IP, info email.  
+ WHOIS, DNS, reputazione IP, info email
  
 ---
 ## 👤 17) OSINT Social (username)
 Ricerca username su piattaforme social
   
-profili, correlazioni, footprint pubblico.  
+profili, correlazioni, footprint pubblico
 
 ---
 ## 📡 18) OSINT IP Avanzato
 Analisi approfondita di un indirizzo IP
 
-ASN, geolocazione, reputazione.  
+ASN, geolocazione, reputazione
 
 ---
 ## 🏴‍☠️ 19) OSINT Dominio Avanzato (subdomains)
