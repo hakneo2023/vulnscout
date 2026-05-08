@@ -207,7 +207,8 @@ per info: hack.neo.git@gmail.com
 <p align="center">
   <img src="assets/assets_2/logo.png" width="150" alt="Hack-NEO Logo">
 </p>
----
+
+
 														
 
 											Copyright (c) 2026 Dany (hack-neo)
