@@ -213,8 +213,6 @@ per info: hack.neo.git@gmail.com
 											Copyright (c) 2026 Dany (hack-neo)
 
 
-MIT License
-
 Il permesso è concesso, gratuitamente, a chiunque ottenga una copia di questo software e dei relativi file di documentazione
 (di seguito “Software”), di trattare il Software senza restrizioni, inclusi senza limitazioni i diritti di utilizzare, copiare,
 modificare, unire, pubblicare, distribuire, sublicenziare e/o vendere copie del Software, e di permettere alle persone a cui
