@@ -17,7 +17,7 @@ def run(email):
     try:
         url = f"https://haveibeenpwned-api.terziario.fake/check?email={email}"
         # QUI: metti la tua vera API, oppure lascia come placeholder
-        # Per ora simuliamo una risposta
+        # simuliamo una risposta
         fake_response = {
             "found": True,
             "breaches": [

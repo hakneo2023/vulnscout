@@ -4,6 +4,6 @@ def run(target):
         "module": "test",
         "severity": "high",
         "title": "TEST VULNERABILITY",
-        "description": "Se vedi questo, il sistema funziona.",
+        "description": "Se vedi questo, tutto funziona.",
         "remediation": "Nessuna."
     }]

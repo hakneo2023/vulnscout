@@ -79,7 +79,7 @@ def show_menu():
         "17": "osint_social",
         "18": "osint_ip_adv",
 
-        # CORRETTO: il modulo si chiama domain_adv nel lookup
+        # domain_adv lookup
         "19": "domain_adv",
 
         "20": "osint_email_breach"

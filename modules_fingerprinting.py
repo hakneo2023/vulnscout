@@ -11,7 +11,7 @@ def _safe_get(url, allow_redirects=True):
 
 
 # ============================
-#   FAVICON HASH DATABASE (DEMO)
+#   FAVICON HASH DATABASE
 # ============================
 
 FAVICON_HASHES = {
@@ -192,14 +192,14 @@ def _detect_static_resources(url):
 
 
 # ============================
-#   TLS / PROTOCOL (BEST EFFORT)
+#   TLS / PROTOCOL
 # ============================
 
 def _infer_protocol_info(response):
     findings = []
 
-    # Non abbiamo accesso diretto a TLS handshake con requests,
-    # ma possiamo inferire qualcosa da header e URL.
+    # accesso diretto a TLS handshake con requests,
+    # header e URL.
     url = response.url
     parsed = urlparse(url)
 
