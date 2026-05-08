@@ -39,6 +39,7 @@ Valuta la configurazione Cross-Origin Resource Sharing
 wildcard pericolose
 
 policy permissive.  
+
 ---
 ## 📁 3) Directory Scanner
 Scanner passivo per directory e file esposti 
@@ -47,6 +48,7 @@ backup
 configurazioni
 
 cartelle sensibili
+
 ---
 ## 🧩 4) SQLi (base)
 Rilevamento passivo di SQL Injection  
@@ -54,6 +56,7 @@ Rilevamento passivo di SQL Injection
 error-based SQLi
 
 parametri vulnerabili
+
 ---
 ## 🧬 5) SQLi Avanzato
 Analisi avanzata con payload complessi
@@ -61,6 +64,7 @@ Analisi avanzata con payload complessi
 time-based
 
 boolean-based SQLi
+
 ---
 ## ⚠️ 6) XSS Detector
 Analisi passiva per Cross-Site Scripting
@@ -68,11 +72,13 @@ Analisi passiva per Cross-Site Scripting
 XSS riflesso
 
 output non sanitizzato
+
 ---
 ## 📱 7) Phone OSINT PRO
 Raccoglie informazioni OSINT su numeri telefonici
 
 carrier, reputazione, blacklist
+
 ---
 ## 🧠 8) Fingerprinting ULTRA
 Fingerprinting avanzato del target
