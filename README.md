@@ -195,6 +195,7 @@ Progetto sviluppato da Dany (hack-neo)
 
 per info: hack.neo.git@gmail.com
 
+---
 MIT License
 
 Copyright (c) 2026 Dany (hack-neo)
