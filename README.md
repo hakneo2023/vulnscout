@@ -7,10 +7,14 @@
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing
 
+---
+
 VulnScout è uno strumento leggero per la ricognizione delle vulnerabilità web, progettato per scopi didattici e per test di sicurezza autorizzati
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
 ## ⚠️ Disclaimer  
 This tool must only be used on systems you own or have explicit permission to test 
+
+---
 
 Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utente o per i quali si dispone di un'autorizzazione esplicita per il test
 
@@ -19,6 +23,10 @@ Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utent
 
 VulnScout 2.0 include 20 moduli di analisi passiva, OSINT e fingerprinting 
 Ogni modulo è progettato per essere non distruttivo e conforme alle best practice OWASP
+
+---
+
+VulnScout 2.0 includes 20 passive analysis, OSINT and fingerprinting modules Each module is designed to be non-destructive and compliant with OWASP best practices
 
 ---
 ✨ Functionality
@@ -175,6 +183,8 @@ source venv/bin/activate
 pip install -r requirements.txt 
 
 se i requirements non dovessero funzionare, provare con il comando: pip install dnspython python-whois requests phonenumbers beautifulsoup4 colorama
+
+If the requirements don't work, try the command: pip install dnspython python-whois requests phonenumbers beautifulsoup4 colorama
 
 to start the program python3 main.py 
 
