@@ -208,9 +208,9 @@ per info: hack.neo.git@gmail.com
   <img src="assets/assets_2/logo.png" width="150" alt="Hack-NEO Logo">
 </p>
 ---
-MIT License
+														MIT License
 
-Copyright (c) 2026 Dany (hack-neo)
+											Copyright (c) 2026 Dany (hack-neo)
 
 
 Il permesso è concesso, gratuitamente, a chiunque ottenga una copia di questo software e dei relativi file di documentazione
