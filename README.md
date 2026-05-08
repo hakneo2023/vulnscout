@@ -3,6 +3,32 @@
 </p>
 
 
+
+## 📸 Demo Screenshots
+
+Una panoramica del funzionamento di **VulnScout**, con diversi moduli in azione:
+
+<p align="center">
+  <img src="screens/headers.jpg" width="45%">
+  <img src="screens/cors.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="screens/dirs.jpg" width="45%">
+  <img src="screens/sqli.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="screens/sqli_adv.jpg" width="45%">
+  <img src="screens/xss.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="screens/phone_osint.jpg" width="45%">
+  <img src="screens/fingerprinting.jpg" width="45%">
+</p>
+
+
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing
 
