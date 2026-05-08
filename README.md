@@ -199,7 +199,7 @@ to start the program python3 main.py
 
 ---
 
-										        🧑‍💻 Autore
+										         🧑‍💻 Autore
 								      Progetto sviluppato da Dany (hack-neo)
 
 per info: hack.neo.git@gmail.com
