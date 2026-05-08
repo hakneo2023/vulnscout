@@ -12,7 +12,7 @@ Una panoramica del funzionamento di **VulnScout**, con diversi moduli in azione:
   <img src="screens/vulnscout_demo.gif" width="80%">
 </p>
 
-> La GIF mostra l’avvio del tool, l’esecuzione dei moduli principali e la generazione dei risultati.
+La GIF mostra l’avvio del tool, l’esecuzione dei moduli principali e la generazione dei risultati.
 
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing
