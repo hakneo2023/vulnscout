@@ -194,3 +194,39 @@ to start the program python3 main.py
 Progetto sviluppato da Dany (hack-neo)
 
 per info: hack.neo.git@gmail.com
+
+MIT License
+
+Copyright (c) 2026 Dany (hack-neo)
+
+
+Il permesso è concesso, gratuitamente, a chiunque ottenga una copia di questo software e dei relativi file di documentazione
+(di seguito “Software”), di trattare il Software senza restrizioni, inclusi senza limitazioni i diritti di utilizzare, copiare,
+modificare, unire, pubblicare, distribuire, sublicenziare e/o vendere copie del Software, e di permettere alle persone a cui
+il Software è fornito di farlo, nel rispetto delle seguenti condizioni:
+
+Il presente avviso di copyright e questa dichiarazione di autorizzazione devono essere inclusi in tutte le copie o parti
+sostanziali del Software.
+
+IL SOFTWARE È FORNITO "COSÌ COM'È", SENZA ALCUNA GARANZIA ESPRESSA O IMPLICITA, INCLUSE, A TITOLO ESEMPLIFICATIVO,
+LE GARANZIE DI COMMERCIABILITÀ, IDONEITÀ PER UNO SCOPO PARTICOLARE E NON VIOLAZIONE DEI DIRITTI ALTRUI.
+IN NESSUN CASO GLI AUTORI O I TITOLARI DEL COPYRIGHT POTRANNO ESSERE RITENUTI RESPONSABILI PER QUALSIASI RECLAMO,
+DANNO O ALTRO TIPO DI RESPONSABILITÀ, SIA IN UN'AZIONE CONTRATTUALE, ILLECITA O DI ALTRO TIPO, DERIVANTE DA,
+O CONNESSA ALL'USO O ALLA DISTRIBUZIONE DEL SOFTWARE.
+
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+and associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
