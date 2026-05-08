@@ -169,13 +169,14 @@ cd vulnscout
 
 python -m venv venv
 source venv/bin/activate
-
-pip install -r requirements.txt 
-
-se i requirements non dovessero funzionare, provare con il comando: pip install dnspython python-whois requests phonenumbers beautifulsoup4 colorama
-
-to start the program python3 main.py 
 ---
+pip install -r requirements.txt 
+---
+se i requirements non dovessero funzionare, provare con il comando: pip install dnspython python-whois requests phonenumbers beautifulsoup4 colorama
+---
+to start the program python3 main.py 
 
+---
+---
 🧑‍💻 Autore
 Progetto sviluppato da Dany (hack-neo)
