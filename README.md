@@ -22,8 +22,8 @@ Ogni modulo è progettato per essere non distruttivo e conforme alle best practi
 ✨ Functionality
 ---
 ## 🛡️ 1) Headers
-Analizza gli header HTTP del server e identifica configurazioni mancanti o deboli.  
-**Rileva:** 
+Analizza gli header HTTP del server
+identifica configurazioni mancanti o deboli.
 CSP assente
 cookie insicuri
 server exposure 
