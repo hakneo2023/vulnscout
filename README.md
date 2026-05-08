@@ -9,7 +9,9 @@
 Una panoramica del funzionamento di **VulnScout**, con diversi moduli in azione:
 
 <p align="center">
-  <img src="screens/VulnScout.mp4" width="100%">
+  <video src="screens/VulnScout.mp4" width="80%" controls autoplay loop muted>
+    Il tuo browser non supporta il tag video.
+  </video>
 </p>
 
 La GIF mostra l’avvio del tool, l’esecuzione dei moduli principali e la generazione dei risultati.
