@@ -2,8 +2,6 @@
   <img src="assets/logo.png" width="260" alt="Hack-Neo Logo">
 </p>
 
-
-
 ## 📸 Demo Screenshots
 
 Una panoramica del funzionamento di **VulnScout**, con diversi moduli in azione:
@@ -13,7 +11,6 @@ Una panoramica del funzionamento di **VulnScout**, con diversi moduli in azione:
 </p>
 
 La GIF mostra l’avvio del tool, l’esecuzione dei moduli principali e la generazione dei risultati.
-
 
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing
