@@ -34,78 +34,112 @@ server exposure
 
 ---
 ## 🔄 2) CORS Analyzer
-Valuta la configurazione Cross-Origin Resource Sharing.  
-wildcard pericolose, policy permissive.  
+Valuta la configurazione Cross-Origin Resource Sharing
+
+wildcard pericolose
+
+policy permissive.  
 ---
 ## 📁 3) Directory Scanner
-Scanner passivo per directory e file esposti.  
-**Rileva:** backup, configurazioni, cartelle sensibili.  
+Scanner passivo per directory e file esposti 
+backup
+
+configurazioni
+
+cartelle sensibili
 ---
 ## 🧩 4) SQLi (base)
-Rilevamento passivo di SQL Injection.  
-**Rileva:** error-based SQLi, parametri vulnerabili.  
+Rilevamento passivo di SQL Injection  
+
+error-based SQLi
+
+parametri vulnerabili
 ---
 ## 🧬 5) SQLi Avanzato
-Analisi avanzata con payload complessi.  
-**Rileva:** time-based, boolean-based SQLi.  
+Analisi avanzata con payload complessi
+
+time-based
+
+boolean-based SQLi
 ---
 ## ⚠️ 6) XSS Detector
-Analisi passiva per Cross-Site Scripting.  
-**Rileva:** XSS riflesso, output non sanitizzato.  
+Analisi passiva per Cross-Site Scripting
+
+XSS riflesso
+
+output non sanitizzato
 ---
 ## 📱 7) Phone OSINT PRO
-Raccoglie informazioni OSINT su numeri telefonici.  
-**Rileva:** carrier, reputazione, blacklist.  
+Raccoglie informazioni OSINT su numeri telefonici
+
+carrier, reputazione, blacklist
 ---
 ## 🧠 8) Fingerprinting ULTRA
-Fingerprinting avanzato del target.  
-**Rileva:** CMS, framework, server, librerie JS.  
+Fingerprinting avanzato del target
+
+CMS
+
+framework
+
+server 
+
+librerie JS
 ---
 ## 🚀 9) Tutti i moduli
-Esegue in sequenza tutti i moduli compatibili.  
+Esegue in sequenza tutti i moduli compatibili
 ---
 ## 🧪 10) TEST (debug)
-Modulo interno di debug.  
+Modulo interno di debug
 ---
 ## 🔐 11) SSL Analyzer
 Analizza certificati SSL/TLS.  
-**Rileva:** certificati scaduti, protocolli obsoleti.  
+
+certificati scaduti, protocolli obsoleti.  
 ---
 ## 🏗️ 12) Technology Fingerprinting PRO
-Fingerprinting tecnologico avanzato.  
-**Rileva:** plugin, versioni, stack server.  
+Fingerprinting tecnologico avanzato
+
+plugin, versioni, stack server.  
 ---
 ## 🛡️ 13) WAF Detector
-Rileva la presenza di Web Application Firewall.  
-**Rileva:** Cloudflare, Sucuri, Imperva, AWS WAF.  
+Rileva la presenza di Web Application Firewall
+ 
+Cloudflare, Sucuri, Imperva, AWS WAF.  
 ---
 ## 🔀 14) Open Redirect Scanner
-Analisi passiva per open redirect.  
-**Rileva:** redirect non validati, riflessioni URL.  
+Analisi passiva per open redirect
+
+redirect non validati, riflessioni URL
 ---
 ## 🤖 15) Robots.txt Analyzer
-Analizza robots.txt per directory sensibili.  
-**Rileva:** percorsi nascosti o riservati.  
+Analizza robots.txt per directory sensibili
+  
+percorsi nascosti o riservati 
 ---
 ## 🌐 16) OSINT Avanzato (email/IP/dominio)
-Modulo OSINT multi-target.  
-**Rileva:** WHOIS, DNS, reputazione IP, info email.  
+Modulo OSINT multi-target
+
+ WHOIS, DNS, reputazione IP, info email.  
 ---
 ## 👤 17) OSINT Social (username)
-Ricerca username su piattaforme social.  
-**Rileva:** profili, correlazioni, footprint pubblico.  
+Ricerca username su piattaforme social
+  
+profili, correlazioni, footprint pubblico.  
 ---
 ## 📡 18) OSINT IP Avanzato
-Analisi approfondita di un indirizzo IP.  
-**Rileva:** ASN, geolocazione, reputazione.  
+Analisi approfondita di un indirizzo IP
+
+ASN, geolocazione, reputazione.  
 ---
 ## 🏴‍☠️ 19) OSINT Dominio Avanzato (subdomains)
-Enumerazione subdomini e informazioni dominio.  
-**Rileva:** subdomini esposti, record DNS.  
+Enumerazione subdomini e informazioni dominio
+
+subdomini esposti, record DNS
 ---
 ## ✉️ 20) OSINT Email Breach Check
-Verifica se un’email compare in breach pubblici.  
-**Rileva:** compromissioni, leak, data breach.  
+Verifica se un’email compare in breach pubblici
+
+compromissioni, leak, data breach
 ---
 
 🧩 Installazione
