@@ -3,7 +3,6 @@
 </p>
 
 
-
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing
 
