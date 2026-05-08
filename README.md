@@ -7,210 +7,100 @@
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing. 
 VulnScout è uno strumento leggero per la ricognizione delle vulnerabilità web, progettato per scopi didattici e per test di sicurezza autorizzati.
-
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
 ## ⚠️ Disclaimer  
 This tool must only be used on systems you own or have explicit permission to test. 
 Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utente o per i quali si dispone di un'autorizzazione esplicita per il test.
 
-
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
+✨ Functionality
+
 # 🔧 Moduli di VulnScout 2.0
 
 VulnScout 2.0 include 20 moduli di analisi passiva, OSINT e fingerprinting.  
 Ogni modulo è progettato per essere non distruttivo e conforme alle best practice OWASP.
 
-
-
+---
 ✨ Functionality
-
-🛡️ 1. Headers
-Analizza gli header HTTP di sicurezza.
-
-Comando
-
-python3 main.py https://sito.com --modules headers
-
-Rileva
-Content-Security-Policy mancante/debole
-
-Strict-Transport-Security mancante
-
-X-Frame-Options
-
-X-Content-Type-Options
-
-Referrer-Policy
-
-Permissions-Policy
-
-Server leak
-
-leak
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-
-🌐 2. CORS
-
-Analizza la configurazione Cross-Origin Resource Sharing.
-
-Comando
-
-python3 main.py https://sito.com --modules cors
-
-Rileva
-Access-Control-Allow-Origin
-
-Access-Control-Allow-Credentials
-
-Metodi pericolosi
-
-Wildcard su header sensibili
-
-Preflight OPTIONS
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-📁 3. Directory Scanner
-
-Comando
-
-python3 main.py https://sito.com --modules dirs
-
-Rileva
-directory comuni
-
-file sensibili (.env, .git, backup.zip, db.sql)
-
-directory indexing
-
-status code anomali
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-🧬 4. SQLi (base)
-
-Comando
-
-python3 main.py "https://sito.com/page?id=1" --modules sqli
-
-Rileva
-SQLi error-based
-
-SQLi boolean-based semplice
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-🧨 5. XSS (GET + POST + JSON)
-
-Comando
-python3 main.py "https://sito.com/page?test=1" --modules xss
-
-python3 main.py "https://sito.com/page?test=1" --modules xss --aggressive
-
-Rileva
-XSS riflesso GET
-
-XSS POST
-
-XSS JSON
-
-payload avanzati (modalità aggressiva)
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-📱 6. Phone OSINT PRO
-
-Comando
-
-python3 main.py +393491234567 --modules phone_osint
-
-Rileva
-validità numero
-
-operatore
-
-regione
-
-tipo linea
-
-VoIP
-
-premium rate
-
-numeri temporanei
-
-probabilità WhatsApp
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-🧬 7. Fingerprinting ULTRA
-
-Comando
-
-python3 main.py https://sito.com --modules fingerprinting
-
-Rileva
-Tecnologie lato server
-Apache, Nginx, LiteSpeed, IIS
-
-Reverse proxy
-
-CDN (Cloudflare, Akamai, Fastly, CloudFront)
-
-HSTS, ALPN, HTTP/3
-
-Tecnologie lato client
-jQuery, React, Vue, Angular, Bootstrap
-
-CMS
-WordPress
-
-Joomla
-
-Drupal
-
-Magento
-
-Shopify
-
-Cookie fingerprinting
-PHPSESSID
-
-JSESSIONID
-
-ASP.NET_SessionId
-
-laravel_session
-
-csrftoken
-
-express.sid
-
-Favicon Hash (tecnica stile Shodan)
-riconoscimento tramite hash MD5 della favicon
-
-Risorse statiche
-robots.txt
-
-sitemap.xml
-
-manifest.json
-
-browserconfig.xml
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
-
-🔍Scansione completa di un sito
-
-Comando
-
-python3 main.py https://target.com --modules all
-
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
+---
+## 🛡️ 1) Headers
+Analizza gli header HTTP del server e identifica configurazioni mancanti o deboli.  
+**Rileva:** CSP assente, cookie insicuri, server exposure.  
+---
+## 🔄 2) CORS Analyzer
+Valuta la configurazione Cross-Origin Resource Sharing.  
+**Rileva:** wildcard pericolose, policy permissive.  
+---
+## 📁 3) Directory Scanner
+Scanner passivo per directory e file esposti.  
+**Rileva:** backup, configurazioni, cartelle sensibili.  
+---
+## 🧩 4) SQLi (base)
+Rilevamento passivo di SQL Injection.  
+**Rileva:** error-based SQLi, parametri vulnerabili.  
+---
+## 🧬 5) SQLi Avanzato
+Analisi avanzata con payload complessi.  
+**Rileva:** time-based, boolean-based SQLi.  
+---
+## ⚠️ 6) XSS Detector
+Analisi passiva per Cross-Site Scripting.  
+**Rileva:** XSS riflesso, output non sanitizzato.  
+---
+## 📱 7) Phone OSINT PRO
+Raccoglie informazioni OSINT su numeri telefonici.  
+**Rileva:** carrier, reputazione, blacklist.  
+---
+## 🧠 8) Fingerprinting ULTRA
+Fingerprinting avanzato del target.  
+**Rileva:** CMS, framework, server, librerie JS.  
+---
+## 🚀 9) Tutti i moduli
+Esegue in sequenza tutti i moduli compatibili.  
+---
+## 🧪 10) TEST (debug)
+Modulo interno di debug.  
+---
+## 🔐 11) SSL Analyzer
+Analizza certificati SSL/TLS.  
+**Rileva:** certificati scaduti, protocolli obsoleti.  
+---
+## 🏗️ 12) Technology Fingerprinting PRO
+Fingerprinting tecnologico avanzato.  
+**Rileva:** plugin, versioni, stack server.  
+---
+## 🛡️ 13) WAF Detector
+Rileva la presenza di Web Application Firewall.  
+**Rileva:** Cloudflare, Sucuri, Imperva, AWS WAF.  
+---
+## 🔀 14) Open Redirect Scanner
+Analisi passiva per open redirect.  
+**Rileva:** redirect non validati, riflessioni URL.  
+---
+## 🤖 15) Robots.txt Analyzer
+Analizza robots.txt per directory sensibili.  
+**Rileva:** percorsi nascosti o riservati.  
+---
+## 🌐 16) OSINT Avanzato (email/IP/dominio)
+Modulo OSINT multi-target.  
+**Rileva:** WHOIS, DNS, reputazione IP, info email.  
+---
+## 👤 17) OSINT Social (username)
+Ricerca username su piattaforme social.  
+**Rileva:** profili, correlazioni, footprint pubblico.  
+---
+## 📡 18) OSINT IP Avanzato
+Analisi approfondita di un indirizzo IP.  
+**Rileva:** ASN, geolocazione, reputazione.  
+---
+## 🏴‍☠️ 19) OSINT Dominio Avanzato (subdomains)
+Enumerazione subdomini e informazioni dominio.  
+**Rileva:** subdomini esposti, record DNS.  
+---
+## ✉️ 20) OSINT Email Breach Check
+Verifica se un’email compare in breach pubblici.  
+**Rileva:** compromissioni, leak, data breach.  
+---
 
 🧩 Installazione
 
@@ -226,9 +116,7 @@ pip install -r requirements.txt
 se i requirements non dovessero funzionare, provare con il comando: pip install dnspython python-whois requests phonenumbers beautifulsoup4 colorama
 
 to start the program python3 main.py 
-
-- - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-
+---
 
 🧑‍💻 Autore
 Progetto sviluppato da Dany (hack-neo)
