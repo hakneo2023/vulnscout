@@ -130,7 +130,7 @@ Cloudflare, Sucuri, Imperva, AWS WAF
 ## 🔀 14) Open Redirect Scanner
 Analisi passiva per open redirect
 
-redirect non validati, riflessioni URL
+redirect non validati, URL riflessi
 
 ---
 ## 🤖 15) Robots.txt Analyzer
