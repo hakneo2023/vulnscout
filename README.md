@@ -13,8 +13,6 @@ This tool must only be used on systems you own or have explicit permission to te
 Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utente o per i quali si dispone di un'autorizzazione esplicita per il test.
 
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
-✨ Functionality
-
 # 🔧 Moduli di VulnScout 2.0
 
 VulnScout 2.0 include 20 moduli di analisi passiva, OSINT e fingerprinting.  
@@ -25,11 +23,14 @@ Ogni modulo è progettato per essere non distruttivo e conforme alle best practi
 ---
 ## 🛡️ 1) Headers
 Analizza gli header HTTP del server e identifica configurazioni mancanti o deboli.  
-**Rileva:** CSP assente, cookie insicuri, server exposure.  
+**Rileva:** 
+CSP assente
+cookie insicuri
+server exposure 
 ---
 ## 🔄 2) CORS Analyzer
 Valuta la configurazione Cross-Origin Resource Sharing.  
-**Rileva:** wildcard pericolose, policy permissive.  
+wildcard pericolose, policy permissive.  
 ---
 ## 📁 3) Directory Scanner
 Scanner passivo per directory e file esposti.  
