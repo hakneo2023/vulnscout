@@ -23,10 +23,15 @@ Ogni modulo è progettato per essere non distruttivo e conforme alle best practi
 ---
 ## 🛡️ 1) Headers
 Analizza gli header HTTP del server
+
 identifica configurazioni mancanti o deboli.
+
 CSP assente
+
 cookie insicuri
+
 server exposure 
+
 ---
 ## 🔄 2) CORS Analyzer
 Valuta la configurazione Cross-Origin Resource Sharing.  
