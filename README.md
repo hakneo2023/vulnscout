@@ -3,6 +3,7 @@
 </p>
 
 
+
 # 🔍 VulnScout  
 VulnScout is a lightweight web vulnerability reconnaissance tool designed for educational and authorized security testing. 
 VulnScout è uno strumento leggero per la ricognizione delle vulnerabilità web, progettato per scopi didattici e per test di sicurezza autorizzati.
@@ -15,6 +16,10 @@ Questo strumento deve essere utilizzato solo su sistemi di proprietà dell'utent
 
 
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
+# 🔧 Moduli di VulnScout 2.0
+
+VulnScout 2.0 include 20 moduli di analisi passiva, OSINT e fingerprinting.  
+Ogni modulo è progettato per essere non distruttivo e conforme alle best practice OWASP.
 
 
 
@@ -209,17 +214,18 @@ python3 main.py https://target.com --modules all
 
 🧩 Installazione
 
-git clone https://github.com/USERNAME/vulnscout.git
+git clone https://github.com/hakneo2023/vulnscout
 
 cd vulnscout
 
 python -m venv venv
 source venv/bin/activate
 
-pip install -r requirements.txt
+pip install -r requirements.txt 
 
-to start the program python3 main.py http://www.example.it
+se i requirements non dovessero funzionare, provare con il comando: pip install dnspython python-whois requests phonenumbers beautifulsoup4 colorama
 
+to start the program python3 main.py 
 
 - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - 
 
