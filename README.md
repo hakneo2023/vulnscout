@@ -199,8 +199,8 @@ to start the program python3 main.py
 
 ---
 
-										  🧑‍💻 Autore
-								 Progetto sviluppato da Dany (hack-neo)
+										    🧑‍💻 Autore
+								   Progetto sviluppato da Dany (hack-neo)
 
 per info: hack.neo.git@gmail.com
 
@@ -211,7 +211,7 @@ per info: hack.neo.git@gmail.com
 
 														
 
-								 Copyright (c) 2026 Dany (hack-neo)
+								   Copyright (c) 2026 Dany (hack-neo)
 
 
 Il permesso è concesso, gratuitamente, a chiunque ottenga una copia di questo software e dei relativi file di documentazione
