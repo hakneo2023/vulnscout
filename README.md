@@ -204,6 +204,9 @@ Progetto sviluppato da Dany (hack-neo)
 
 per info: hack.neo.git@gmail.com
 
+<p align="center">
+  <img src="assets/assets_2/logo.png" width="150" alt="Hack-NEO Logo">
+</p>
 ---
 MIT License
 
