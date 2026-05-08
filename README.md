@@ -198,7 +198,7 @@ If the requirements don't work, try the command: pip install dnspython python-wh
 to start the program python3 main.py 
 
 ---
----
+
 🧑‍💻 Autore
 Progetto sviluppato da Dany (hack-neo)
 
