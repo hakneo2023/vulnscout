@@ -90,62 +90,75 @@ framework
 server 
 
 librerie JS
+
 ---
 ## 🚀 9) Tutti i moduli
 Esegue in sequenza tutti i moduli compatibili
+
 ---
 ## 🧪 10) TEST (debug)
 Modulo interno di debug
+
 ---
 ## 🔐 11) SSL Analyzer
 Analizza certificati SSL/TLS.  
 
 certificati scaduti, protocolli obsoleti.  
+
 ---
 ## 🏗️ 12) Technology Fingerprinting PRO
 Fingerprinting tecnologico avanzato
 
 plugin, versioni, stack server.  
+
 ---
 ## 🛡️ 13) WAF Detector
 Rileva la presenza di Web Application Firewall
  
 Cloudflare, Sucuri, Imperva, AWS WAF.  
+
 ---
 ## 🔀 14) Open Redirect Scanner
 Analisi passiva per open redirect
 
 redirect non validati, riflessioni URL
+
 ---
 ## 🤖 15) Robots.txt Analyzer
 Analizza robots.txt per directory sensibili
   
 percorsi nascosti o riservati 
+
 ---
 ## 🌐 16) OSINT Avanzato (email/IP/dominio)
 Modulo OSINT multi-target
 
  WHOIS, DNS, reputazione IP, info email.  
+ 
 ---
 ## 👤 17) OSINT Social (username)
 Ricerca username su piattaforme social
   
 profili, correlazioni, footprint pubblico.  
+
 ---
 ## 📡 18) OSINT IP Avanzato
 Analisi approfondita di un indirizzo IP
 
 ASN, geolocazione, reputazione.  
+
 ---
 ## 🏴‍☠️ 19) OSINT Dominio Avanzato (subdomains)
 Enumerazione subdomini e informazioni dominio
 
 subdomini esposti, record DNS
+
 ---
 ## ✉️ 20) OSINT Email Breach Check
 Verifica se un’email compare in breach pubblici
 
 compromissioni, leak, data breach
+
 ---
 
 🧩 Installazione
